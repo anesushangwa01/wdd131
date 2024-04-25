@@ -1,9 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Inconsolata:wght@200..900&display=swap');
+
+
 body {
     margin: 0;
     display: grid;
     margin: 0 200px;
     grid-gap:30px;
     grid-template: auto 1fr auto / 300px 1fr auto;
+    font-family: "Inconsolata", monospace;
+ 
 }
 nav {
     display: flex;
@@ -14,9 +20,11 @@ nav {
 
 }
 
-
-
-
+h1,h2,h3,h4,h5,h6{
+  font-family: "Fjalla One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
 
 
@@ -56,6 +64,7 @@ header {
 
 
   .grid{
+    padding: 10px;
     display: grid;
     grid-template: 1fr 1fr  ;
   
@@ -66,12 +75,22 @@ header {
     grid-column: 1 / 2;
 }
 .side{
+  
+  
 
     grid-column: 2/ 3;
+}
+.side , img{
+  border-radius: 20px;
+  box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.24);
+-webkit-box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.24);
+-moz-box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.24);
+
 }
 
 
 .grid2{
+  padding: 10px;
   
     display: grid;
     grid-template: 1fr 1fr  ;
@@ -106,5 +125,9 @@ h2{
   .samecolor{
     background-color: #6495ED;
     margin-top: -20px;
+  }
+
+  #full-date{
+    text-align: center;
   }
  

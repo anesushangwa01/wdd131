@@ -55,9 +55,6 @@ h2 {
 	color: #333;
 	font-weight: 700;
 }
-header h2{
-	color: #fff;
-}
 
 /* when the button is clicked - the open class is toggled (added/removed) */
 .open a {

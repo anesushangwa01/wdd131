@@ -1,0 +1,54 @@
+img{
+    width: 100%;
+    border-radius: 30px;
+   
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    
+
+   
+  }
+  img, .container{
+    height:500px;
+  }
+
+.centered {
+   color: #25d366;
+    padding: 3px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 3px 3px black;
+    /* From https://css.glass */
+/* background:black;
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.38); */
+  }
+
+  main{
+    display: grid;
+    grid-template: 1fr;
+    margin: 0 10px;
+    
+ 
+  }
+  .data, .weather{background-color:  rgb(17, 27, 33);
+    color: white;
+    -webkit-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.75);
+    padding: 10px;
+    
+  
+  }
+
+  .weather{
+    margin-top: 50px;
+  }

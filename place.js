@@ -1,14 +1,16 @@
 function fetchWeather() {
-    // Hardcoded weather information
-    const temperature = 25; // in Celsius
+ 
+    const temperature = 25; 
     const condition = "Sunny";
-    const windSpeed = 10; // in meters per second
+    const windSpeed = 10; 
+    const windchill= 'N/A'; 
 
     // Update the DOM with weather information
     document.getElementById('temperature').textContent = temperature + " °C";
     document.getElementById('condition').textContent = condition;
     document.getElementById('wind-speed').textContent = windSpeed + " m/s";
+    document.getElementById('wind-chill').textContent = windchill;
 }
 
-// Call fetchWeather function when the page loads
+
 window.addEventListener('load', fetchWeather);

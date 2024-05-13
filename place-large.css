@@ -1,8 +1,8 @@
 @media screen and ( min-width: 650px){
 
        .move{
-        background-color:  #080d10;
-        color: white;
+        background-color:  var(--backcolor);
+        color: var(--white);
         margin-top: 1rem;
         margin-left: -1rem;
     
@@ -26,7 +26,7 @@ hr{
 }
   .data, .weather      {
           background-color: rgba(252, 245, 235, .8);
-          color: black;
+          color: var(--black);
           -webkit-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.75);
           -moz-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.75);
           box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.75);

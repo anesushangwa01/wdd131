@@ -1,10 +1,19 @@
+:root {
+  --header: #E4C59E;
+  --white: #ffffff;
+  --black: #000;
+  --green: green;
+  --backcolor: #080d10;
+}
+
+
 body{
   margin: 0;
 }
 
 
 header{
-  background-color: #E4C59E;
+  background-color: var(--header) ;
   text-align: center;
 
 }
@@ -36,15 +45,15 @@ h2{
    
   }
   hr{
-    background-color: black;
-    color: black;
+    background-color: var(--black);
+    color:var(--black);
   }
   .back{
-    background-color: green;
+    background-color: var(--green);
     height: 10px;
   }
   .back2{
-    background-color:  #080d10;
+    background-color: var(--backcolor);
     height: 10px;
   }
 

@@ -1,0 +1,34 @@
+@media (min-width: 37.5em) {
+
+
+	#menu {
+		display: none; /* hide hamburger button */
+	}
+	header {
+		display: flex;
+		align-items: center;
+	justify-content: space-between;
+	}
+	.navigation {
+       
+        justify-content: flex-end;
+		flex-direction: row;
+       
+
+            
+      
+	}
+
+
+	.navigation a {
+		display: block;
+		flex: 1 1 100%;
+       
+	}
+ 
+    .res-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+    }
+
+}

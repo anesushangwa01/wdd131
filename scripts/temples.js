@@ -66,3 +66,44 @@ const temples = [
 	},
 	// Add more temple objects here...
   ];
+
+  createTemple(temples);
+
+  const nonutahLink = document.querySelector("#nonutah");
+
+  nonutahLink.addEventListener("click", () => {
+	  createTemple(temples.filter(temple => temple.dedicated.includes("2005")));
+  });
+ 
+
+  function createTemple(ftemble) {
+	document.querySelector(".res-grid").innerHTML ="";
+	ftemble.forEach(temple =>{
+		let card = document.createElement("section");
+		let name = document.createElement("h3");
+		let location = document.createElement("p");	
+		let dedicated = document.createElement("p");
+		let area = document.createElement("p");
+		let image = document.createElement("img");
+
+		name.textContent = temple.templeName
+
+		location.innerHTML = `<span class="label">Location:</span> ${temple.location}`;
+		dedicated.innerHTML = `<span class="label">Dedicated:</span> ${temple.dedicated}`;
+		area.innerHTML = `<span class="label">Area:</span> ${temple.area} sq. ft.`;
+		image.setAttribute("src" ,temple.imageUrl);
+		image.setAttribute("alt" ,`${temple.templeName} temple`);
+		image.setAttribute("loading", "lazy");
+
+		card.appendChild(name);
+		card.appendChild(location);
+		card.appendChild(dedicated);
+		card.appendChild(area);
+		card.appendChild(image);
+
+		document.querySelector(".res-grid").appendChild(card);
+
+		
+	})
+	
+  }

@@ -67,15 +67,57 @@ const temples = [
 	// Add more temple objects here...
   ];
 
+
+const homeLink = document.getElementById("home-link");
+const oldLink = document.getElementById("old-link");
+const newLink = document.getElementById("new-link");
+const largeLink = document.getElementById("large-link");
+const smallLink = document.getElementById("small-link");
+const heading = document.querySelector(" h3");
+
+createTemple(temples);
+
+// this code is  refering to a actual info when user click  the link
+homeLink.addEventListener("click", () => {
   createTemple(temples);
+  heading.textContent = " Home ";
+});
 
-  const nonutahLink = document.querySelector("#nonutah");
-
-  nonutahLink.addEventListener("click", () => {
-	  createTemple(temples.filter(temple => temple.dedicated.includes("2005")));
+newLink.addEventListener("click", () => {
+  const newTemples = temples.filter((temple) => {
+    const year = new Date(temple.dedicated).getFullYear();
+    return year >= 2005 && year <= 2024;
   });
- 
+  createTemple(newTemples);
+  heading.textContent = "New"
+});
 
+oldLink.addEventListener("click", () => {
+	const newTemples = temples.filter((temple) => {
+	  const year = new Date(temple.dedicated).getFullYear();
+	  return  year < 2005;
+	});
+	createTemple(newTemples);
+	heading.textContent = "Old"
+  });
+
+largeLink.addEventListener("click", () => {
+  const largeTemples = temples.filter((temple) => temple.area >= 10000);
+  createTemple(largeTemples);
+  heading.textContent = "Large"
+});
+
+smallLink.addEventListener("click", () => {
+  const smallTemples = temples.filter((temple) => temple.area < 10000);
+  createTemple(smallTemples);
+  heading.textContent = "Small"
+});
+ 
+// end of code 
+
+
+
+//this code  will display info about temples 
   function createTemple(ftemble) {
 	document.querySelector(".res-grid").innerHTML ="";
 	ftemble.forEach(temple =>{

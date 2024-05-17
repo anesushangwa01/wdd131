@@ -1,86 +1,97 @@
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Inconsolata:wght@200..900&display=swap');
 
-body{
-    margin: 0;
-	font-family: "Inconsolata", monospace;
+body {
+  margin: 0;
+  font-family: "Inconsolata", monospace;
 }
-
-
 
 /* small view navigation */
 #menu {
-	font-size: 1.5rem;
-	border: 0;
-	background: none;
-	color: #000;
-	position: absolute;
-	top: 1rem;
-	right: 1rem;
+  font-size: 1.5rem;
+  border: 0;
+  background: none;
+  color: #000;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
 }
-h1,h2,h3,h4,h5,h6{
-	font-family: "Fjalla One", sans-serif;}
-	h3{
-		text-align: center;
-	}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Fjalla One", sans-serif;
+}
+
+h3 {
+  text-align: center;
+}
+
 #menu::before {
-	content: "☰";
+  content: "☰";
 }
 
 #menu.open::before {
-	content: "❎";
+  content: "❎";
 }
-img{
-    max-width: 100%;
+
+img {
+  max-width: 100%;
 }
+
 .navigation {
-	
-
-	display: flex;
-	flex-direction: column
+  display: flex;
+  flex-direction: column;
 }
+
 h2 {
-    align-self: flex-start; /* Align h2 to the flex-start */
-  }
-.navigation a {
-	display: none;
-
-	color:black;
-	text-align: center;
-	padding: 1rem;
-	text-decoration: none;
+  align-self: flex-start; /* Align h2 to the flex-start */
 }
+
+.navigation a {
+  display: none;
+  color: black;
+  text-align: center;
+  padding: 1rem;
+  text-decoration: none;
+}
+
 .navigation a:hover {
-	background-color: #bbb;
-	color: #333;
-	font-weight: 700;
+  background-color: #bbb;
+  color: #333;
+  font-weight: 700;
 }
 
 /* when the button is clicked - the open class is toggled (added/removed) */
 .open a {
-	display: block;
+  display: block;
 }
 
 header {
-    background-color: #E4C59E;
-	display: grid;
-	grid-gap: 1rem;
-	padding: 20px;
-	border: 1px solid rgba(0, 0, 0, 0.1);
-	box-shadow: 0 0 30px #333;
+  background-color: #E4C59E;
+  display: grid;
+  grid-gap: 1rem;
+  padding: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 30px #333;
 }
 
-.res-grid{ 
-    display: grid;
-    grid-template-columns: 1fr;
+.res-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 30px;
+  margin: 0 30px;
 }
 
-footer{
+section {
+  background-color: #080d10;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  color: white;
+  border-radius: 5px;
+}
 
-	text-align: center;
-	height: fit-content;
-    height: 20vh;
-    background-color: #E4C59E;
-	padding: 5px;
-
-  }
+footer {
+  text-align: center;
+  height: fit-content;
+  margin: 0;
+  background-color: #E4C59E;
+  padding: 5px;
+}

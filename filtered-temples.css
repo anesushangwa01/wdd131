@@ -95,3 +95,8 @@ footer {
   background-color: #E4C59E;
   padding: 5px;
 }
+
+section img {
+	width: 100%;
+	height: auto;
+	display: block;}

@@ -15,8 +15,11 @@ h1,h2,h3,h4{
 
 body{
     font-family: "Inconsolata", monospace;
+   
 }
-
+h1{
+    text-align: center;
+}
 main{
     margin:  0  90px;
 }

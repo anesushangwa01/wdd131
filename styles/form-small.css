@@ -1,10 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Inconsolata:wght@200..900&display=swap');
+
+
+body{
+    margin: 0;
+    font-family: "Inconsolata", monospace;
+}
+
 header{
     text-align: center;
     height: 10vh;
     background-color: #f36868;
     padding: 10px;
 }
-
+.checkbox-group{
+    display: flex;
+}
 main {
     font-family: Arial, sans-serif;
 
@@ -53,9 +64,10 @@ main {
 
 .form-container input[type="submit"] {
     background-color: #5cb85c;
-    color: #fff;
+    color: black;
     border: none;
     cursor: pointer;
+
 }
 
 .form-container input[type="submit"]:hover {
@@ -81,3 +93,12 @@ main {
 .form-container .checkbox-group span {
     margin-left: 5px;
     color: #333;}
+
+
+    footer{
+background-color: #333;
+          padding: 10px;
+          background-color: #E4C59E;
+          text-align: center;
+      
+        }

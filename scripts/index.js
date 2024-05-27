@@ -7,3 +7,5 @@
 
   // Display the full date
   document.getElementById('full-date').innerText = fullDate;
+
+ 

@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Inconsolata:wght@200..900&family=Poetsen+One&display=swap');
+
+
+body{
+    margin: 0;
+    font-family: "Inconsolata", monospace;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: "Poetsen One", sans-serif;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+
+  }
+  .banner{
+    background-image: url("../img/lemon-1444025_1280.webp");
+    background-size: cover;
+  }
+  
+  .container ,img{
+    width: 100%;
+   
+
+   
+  }
+  .container{
+    height: 300px;
+  }
+  
+  .centered {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+
+  .centered2 {
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  
+
+  
+  
+  .navigation a {
+
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+  }
+
+  a{
+    color: black;
+  }
+  
+  a:hover {
+    background-color: #E7E154;
+    border-radius: 10px;
+
+    font-size: larger;
+    height: 10px;
+  }
+
+  .back{
+    background-color: #E7E154;
+    padding: 10px;
+  }
+
+  .like-dislike {
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  .middle{
+    text-align: center;
+  }
+
+.sel, input{
+  padding: 10px;
+  margin: 0 10px;
+
+}
+
+.sel{
+width: 50%;
+}
+.center{
+  text-align: center;
+  padding: 4px;
+}
+  footer{
+    background-color: #E7E154 ;
+   }
+
+   .mcontent, main{
+    margin: 0 10px;
+   }
+
+   select{
+    margin: 0 10px;
+   }
+
+
+   
+
+  nav{
+    background-color: #E7E154;
+    padding: 10px;
+  }
+   button {
+    display: flex;
+    justify-content: center;
+ 
+ 
+  
+}
+
+.footer{
+text-align: center;
+}
+
+.nav-links {
+    display: none; 
+    width: 100%;
+}
+
+.nav-links a {
+  display: block;
+    padding: 1rem;
+    width: 100%;
+}
+
+.nav-links.active {
+    display: block; 
+}
+
+
+
+
+
+
+
+   

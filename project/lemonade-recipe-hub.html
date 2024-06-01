@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>WDD 131 - Dynamic Web Fundamentals - Anesu Shangwa</title> 
+    <meta name="description" content=" WDD 131 - Dynamic Web Fundamentals - Anesu Shangwa"> 
+    <meta name="author" content="Anesu Shangwa"> 
+    <title>Lemonade Recipe Hub</title>
+    <link rel="stylesheet" href="./style/lemonade-small.css">
+    <link rel="stylesheet" href="./style/lemonade-large.css">
+
+</head>
+<body>
+    <div class="banner">
+    <div class="container">
+
+        <nav class="navigation">
+            <button class="hamburger" id="hamburger">&#9776;</button>
+            <div class="nav-links" id="nav-links">
+                <a href="#" title="home" id="home-link">Home</a>
+                <a href="#" title="gallery" id="old-link">Gallery</a>
+                <a href="#" title="about us" id="new-link">About Us</a>
+            </div>
+        </nav>
+    
+  
+        <div class="centered">
+       
+        </div>
+        <div class="centered2"><h2>Discover the best lemonade recipes here</h2>
+         <p>From classic to creative twists, find your perfect refreshing drink for any occasion. Let's mix up some sunshine!</p>
+        </div>
+
+       
+      </div>
+
+
+    </div>
+      <main>
+        <h2 style="text-align: center;">Recipes</h2>
+        <div class="mcontent">
+            <div class="back">
+                <h2>Strawberry Lemonade</h2>
+      
+                <p> This recipe offers a delightful blend of fresh strawberries 
+                    and zesty lemons, creating a sweet and tangy homemade Strawberry Lemonade.
+                     After blending and straining the strawberries, they're combined with lemon juice, 
+                     sugar, and water, then chilled for optimal flavor. Garnish with lemon slices and mint for 
+                     an elegant touch. Adjust sugar levels to
+                     taste, ensuring a refreshing beverage perfect for sipping on hot summer days.</p>
+
+                     <div class="like-dislike">
+                        <button onclick="like()">Like</button>
+                        <span id="likeCount">0</span>
+                    </div>
+                    
+                    <div class="like-dislike">
+                        <button onclick="dislike()">Dislike</button>
+                        <span id="dislikeCount">0</span>
+                    </div>
+            </div>
+        
+             <div>
+                <img src="https://cdn.pixabay.com/photo/2019/06/13/18/19/drinking-4272206_1280.jpg" alt="" srcset="">
+          
+             </div>
+           
+             <div>
+                <img src="https://cdn.pixabay.com/photo/2019/06/13/18/19/drinking-4272206_1280.jpg" alt="" srcset="">
+          
+             </div>
+             <div class="back">
+
+
+                <h2>Strawberry Lemonade</h2>
+      
+                <p> This recipe offers a delightful blend of fresh strawberries 
+                    and zesty lemons, creating a sweet and tangy homemade Strawberry Lemonade.
+                     After blending and straining the strawberries, they're combined with lemon juice, 
+                     sugar, and water, then chilled for optimal flavor. Garnish with lemon slices and mint for 
+                     an elegant touch. Adjust sugar levels to
+                     taste, ensuring a refreshing beverage perfect for sipping on hot summer days.</p>
+
+                     <div class="like-dislike">
+                        <button onclick="like()">Like</button>
+                        <span id="likeCount">0</span>
+                    </div>
+                    
+                    <div class="like-dislike">
+                        <button onclick="dislike()">Dislike</button>
+                        <span id="dislikeCount">0</span>
+                    </div>
+            </div>
+        
+           
+               
+        </div>
+        <div class="middle">
+
+        <label for="scenarioSelect"><h2>Select a Scenario:</h2></label>
+        <select class="sel" id="scenarioSelect" onchange="selectScenario()">
+            <option value="" disabled>Select a Scenario</option>
+            <option value="recipe">What is the best lemonade recipe for a summer party?</option>
+            <option value="flavors">Where can I find unique lemonade flavors?</option>
+            <option value="vegan-sugar-free">Where can I find vegan or sugar-free lemonade recipes?</option>
+            <option value="large-crowd">How do I make lemonade for a large crowd?</option>
+        </select>
+    </div>
+    </div>
+    
+    <div id="scenarioContent" class="styleit">
+  
+    </div>
+
+      </main>
+ <br><br><br>
+  <footer>
+ 
+   
+    <img src="./img/new.svg" alt="" width="100" height="100">
+    <div class="footer">
+
+        <ul>
+            <li>Phone number: 0774 998 764</li>
+            <li>Email: lemonade@gmail.com</li>
+            <li> Address: mtn block 9 c16</li>
+        </ul>
+
+        
+     <form action="">
+        <label for="email">Subscribe to our latest updates</label> <br> <br>
+        <input type="email"  placeholder="enter email" required>
+        <input type="submit" value="submit">
+     </form>
+       
+    </div>
+    <div class="center"><p>Copyright &copy; 2024 lemonade hub</p> </div>
+  </footer>
+     <script src="./js/lemonade.js"></script>
+</body>
+</html>

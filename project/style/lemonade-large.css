@@ -31,36 +31,34 @@
        }
 
  
+       #menu {
+		display: none; /* hide hamburger button */
+	}
+	header {
+		display: flex;
+		align-items: center;
+	justify-content: space-between;
+	}
+	.navigation {
+       
+        justify-content: flex-end;
+		flex-direction: row;
+       
 
-
-
-       .navigation {
       
- 
-        align-items: center;
-    }
-    
-    .hamburger {
-        background: none;
-        border: none;
-        font-size: 2rem;
-        cursor: pointer;
-        display: none; 
-    }
-    
-    .nav-links {
+	}
+
+    .navigation a {
         display: flex;
-   
-  
-        align-items: center;
-    }
     
-    .nav-links a {
+        color:black;
         text-align: center;
         padding: 1rem;
         text-decoration: none;
-  
     }
+
+
+    
 
        
    }

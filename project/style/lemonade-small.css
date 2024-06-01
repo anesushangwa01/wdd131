@@ -48,16 +48,16 @@ h1,h2,h3,h4,h5,h6{
 
   
 
-  
+/*   
   
   .navigation a {
 
     text-align: center;
     padding: 1rem;
     text-decoration: none;
-  }
+  } */
 
-  a{
+  /* a{
     color: black;
   }
   
@@ -67,7 +67,7 @@ h1,h2,h3,h4,h5,h6{
 
     font-size: larger;
     height: 10px;
-  }
+  } */
 
   .back{
     background-color: #E7E154;
@@ -142,8 +142,70 @@ text-align: center;
     display: block; 
 }
 
+ul{
+  list-style-type: none;
+}
 
+#menu {
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: #000;
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+}
+h1,h2,h3,h4,h5,h6{
+	font-family: "Fjalla One", sans-serif;}
+	h3{
+		text-align: center;
+	}
+#menu::before {
+	content: "☰";
+}
 
+#menu.open::before {
+	content: "❎";
+}
+img{
+    max-width: 100%;
+}
+.navigation {
+	
+
+	display: flex;
+	flex-direction: column
+}
+h2 {
+    align-self: flex-start; /* Align h2 to the flex-start */
+  }
+.navigation a {
+	display: none;
+
+	color:black;
+	text-align: center;
+	padding: 1rem;
+	text-decoration: none;
+}
+.navigation a:hover {
+	background-color: #bbb;
+	color: #333;
+	font-weight: 700;
+}
+
+/* when the button is clicked - the open class is toggled (added/removed) */
+.open a {
+	display: block;
+}
+
+header {
+    background-color: #E7E154;
+	display: grid;
+	grid-gap: 1rem;
+	padding: 20px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	box-shadow: 0 0 30px #333;
+}
 
 
 

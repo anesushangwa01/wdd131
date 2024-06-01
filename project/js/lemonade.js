@@ -38,16 +38,13 @@ function selectScenario() {
             contentDiv.innerHTML = "<p>Please select a scenario from the dropdown menu.</p>";
     }
 }
+const hamButton = document.querySelector('#menu');
+const navigation = document.querySelector('.navigation');
 
-document.addEventListener('DOMContentLoaded', function() {
-    const hamburger = document.getElementById('hamburger');
-    const navLinks = document.getElementById('nav-links');
-
-    hamburger.addEventListener('click', function() {
-        navLinks.classList.toggle('active');
-    });
+hamButton.addEventListener('click', () => {
+	navigation.classList.toggle('open');
+	hamButton.classList.toggle('open');
 });
-
 
 
 

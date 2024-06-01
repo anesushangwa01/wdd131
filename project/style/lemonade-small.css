@@ -199,7 +199,7 @@ h2 {
 }
 
 header {
-    background-color: #E7E154;
+    background-color:rgba(252, 245, 235, .8);
 	display: grid;
 	grid-gap: 1rem;
 	padding: 20px;

@@ -66,6 +66,8 @@ h1,h2,h3,h4,h5,h6{
 
 }
 
+
+
 .sel{
 width: 50%;
 }
@@ -165,7 +167,7 @@ h2 {
   }
 .navigation a {
 	display: none;
-
+ font-size: larger;
 	color:black;
 	text-align: center;
 	padding: 1rem;
@@ -187,7 +189,7 @@ header {
 
 	display: grid;
 	grid-gap: 1rem;
-
+background-color:rgba(252, 245, 235, .8);
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	box-shadow: 0 0 30px #333;
 
@@ -215,6 +217,11 @@ header {
   background-color: #E7E154;
   padding: 10px;
   border-radius: 10px;
+ }
+
+ .dislike-btn{
+  background-color: #E7E154;
+  padding: 10px;
  }
 
 

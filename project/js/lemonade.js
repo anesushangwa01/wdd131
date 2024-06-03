@@ -65,6 +65,7 @@ const recipes = [
         description: "A refreshing classic lemonade made with freshly squeezed lemon juice, sugar, and water. Perfect for quenching your thirst on a hot summer day. Adjust the sweetness to your liking.",
         imageUrl: "../project/img/classic-lemonade.webp"
     },
+    
     {
         title: "Mango Smoothie",
         description: "A delicious mango smoothie made with fresh mangoes, yogurt, and a touch of honey. Blend until smooth and enjoy this tropical treat any time of the day.",
@@ -102,3 +103,16 @@ const recipesContainer = document.getElementById('recipes-container');
         });
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+       

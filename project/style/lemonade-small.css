@@ -158,9 +158,11 @@ img{
 }
 .navigation {
 	
-
+  background-color:rgba(252, 245, 235, .8);
 	display: flex;
-	flex-direction: column
+	flex-direction: column;
+  
+  
 }
 h2 {
     align-self: flex-start; 
@@ -184,8 +186,9 @@ h2 {
 	display: block;
 }
 
+
 header {
-    background-color:rgba(252, 245, 235, .8);
+
 	display: grid;
 	grid-gap: 1rem;
 
@@ -195,6 +198,28 @@ header {
 
 }
 
+.lemonade-product {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lemonade-product img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.grid{
+  margin: 0  10px;
+  background-color: #E7E154;
+  padding: 10px;
+  border-radius: 10px;
+ }
 
 
 

@@ -63,12 +63,12 @@ const recipes = [
     {
         title: "Classic Lemonade",
         description: "A refreshing classic lemonade made with freshly squeezed lemon juice, sugar, and water. Perfect for quenching your thirst on a hot summer day. Adjust the sweetness to your liking.",
-        imageUrl: "https://cdn.pixabay.com/photo/2016/06/15/17/30/drink-1456958_1280.jpg"
+        imageUrl: "https://cdn.pixabay.com/photo/2018/07/12/21/45/drink-3534412_1280.jpg"
     },
     {
         title: "Mango Smoothie",
         description: "A delicious mango smoothie made with fresh mangoes, yogurt, and a touch of honey. Blend until smooth and enjoy this tropical treat any time of the day.",
-        imageUrl: "https://cdn.pixabay.com/photo/2016/05/26/13/32/mango-1413115_1280.jpg"
+        imageUrl: "https://www.dessertfortwo.com/wp-content/uploads/2021/06/mango-lemonade-5-720x405.jpg"
     }
 ];
 
@@ -81,18 +81,22 @@ recipes.forEach(recipe => {
     const imageElement = document.createElement('img');
     imageElement.src = recipe.imageUrl;
 
+    const contentElement = document.createElement('div');
+    contentElement.classList.add('recipe-content');
+
     const titleElement = document.createElement('h2');
     titleElement.textContent = recipe.title;
 
     const descriptionElement = document.createElement('p');
     descriptionElement.textContent = recipe.description;
 
+    contentElement.appendChild(titleElement);
+    contentElement.appendChild(descriptionElement);
+
     recipeElement.appendChild(imageElement);
-    recipeElement.appendChild(titleElement);
-    recipeElement.appendChild(descriptionElement);
+    recipeElement.appendChild(contentElement);
 
     recipesContainer.appendChild(recipeElement);
 });
-
 
 
